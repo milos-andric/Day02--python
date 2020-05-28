@@ -8,11 +8,11 @@ class CsvReader():
 		self.skip_top = skip_top
 		self.skip_bottom = skip_bottom
 		self.file = None
-		  
+
 	def __enter__(self): 
-		self.file = open(self.filename, 'r') 
+		self.file = open(self.filename, 'r')
 		return self
-	  
+
 	def __exit__(self, exc_type, exc_value, exc_traceback):
 		print("Exception has been handled")
 		self.file.close()
@@ -25,11 +25,11 @@ class CsvReader():
 	def getheader(self):
 		print('FFFFF')
 		stred = self.file.getdata()
-		print(stred)
+		print('FFFFF')
 		stred = stred.split('\n')
-		print(stred)
+		print('FFFFF')
 		stred = str(stred[0])
-		print(stred)
+		print('FFFFF')
 
 
 
